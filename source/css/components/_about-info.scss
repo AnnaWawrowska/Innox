@@ -1,0 +1,40 @@
+// -------------About-info---------------------------
+
+.about-info {
+	padding-top: 45px;
+	padding-bottom: 103px;
+	display: flex;
+	justify-content: space-between;
+
+
+	&__ico {
+		width: 67px;
+		height: 64px;
+		background-color: $color--light-brown;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin: 0 auto;
+		&:after {
+			content: "";
+			display: inline-block;
+			border-top: 1px solid $color--light-brown;
+			position: absolute;
+			width: 105px;
+			top: 31px;
+			left: 75px;
+		}
+		&:last-of-type {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	&__text {
+		padding-top: 13px;
+		text-align: center;
+
+	}
+}

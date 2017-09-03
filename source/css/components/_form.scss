@@ -1,0 +1,26 @@
+// -------------Form---------------------------
+
+.form {
+  &__input {
+    width: 47.5%;
+    height: 50px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    color: $color--lighter-gray;
+    padding-left: 25px;
+    letter-spacing: 2.6px;
+
+    &--wide {
+      width: 100%;
+      max-width: 100%;
+    }
+    &--high{
+      height: 254px;
+    }
+    &--margin-right {
+      margin-right: 31px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+// -------------Services---------------------------
+
+.services {
+	border: 1px solid $color--light-brown;
+	padding: 53px 75px 36px;
+	text-align: center;
+	margin: 3px 5px 37px 3px;
+
+	&__ico {
+		margin: 0 auto;
+		width: 66px;
+		height: 67px;
+		border: 2px solid $color--light-brown;
+		border-radius: 100%;
+		position: relative;
+		margin-bottom: 21px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 45px;
+			height: 1px;
+			background-color: $color--light-brown;
+			position: absolute;
+			top: 31px;
+			left: -62px;
+		}
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 45px;
+			height: 1px;
+			background-color: $color--light-brown;
+			position: absolute;
+			top: 31px;
+			right: -62px;
+		}
+	}
+	&__title {
+		letter-spacing: 2px;
+		margin-bottom: 35px;
+	}
+	&__description {
+		letter-spacing: 0.1px;
+		word-spacing: 3px;
+		line-height: 15px;
+	}
+}

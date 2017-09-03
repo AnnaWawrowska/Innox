@@ -1,0 +1,64 @@
+// -----------------Section-----------------------
+.section {
+	&__heading {
+		width: 199px;
+		height: 43px;
+		border: 1px solid $color--lighter-brown;
+		background-color: $color--white;
+		text-align: center;
+		margin:  100px auto 172px;
+		box-shadow: 0 0 0px 20px $color--white;
+
+
+		&:before {
+			content: "";
+			display: inline-block;
+			border-top: 1px solid $color--lighter-brown;
+			width: calc(100% - 30px);
+			position: absolute;
+			left: 15px;
+			top: 21px;
+			z-index: -1;
+		}
+		&--margin-bottom {
+			margin-bottom: 115px;
+		}
+
+	}
+
+	&--hero {
+		background-color: $color--gray;
+		height: 820px;
+		width: 100%;
+		background-image: url(../img/bg-hero.png);
+		background-repeat: no-repeat;
+	}
+
+	&--about {
+		padding-top: 76px;
+	}
+	&--works {
+		padding-top: 72px;
+	}
+	&--clients {
+		padding-top: 76px;
+		text-align: center;
+	}
+	&--services {
+		padding-top: 6px;
+		padding-bottom: 63px;
+	}
+	&--notebook {
+		background-color: $color--light-brown;
+		padding-top: 160px;
+		padding-bottom: 37px;
+		text-align: left;
+	}
+	&--team {
+		padding-top: 62px;
+	}
+	&--contact {
+		padding-top: 75px;
+		padding-bottom: 139px;
+	}
+}

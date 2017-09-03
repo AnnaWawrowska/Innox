@@ -1,0 +1,77 @@
+// ---------------------------------------------------
+// General typography
+// ---------------------------------------------------
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+strong { font-weight: 500; }
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+}
+
+p { margin: 5px 0;
+}
+
+em {
+	font-style: normal;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 43px;
+	color: $color--light-brown;
+	letter-spacing: 2px;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+h4 {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $color--light-brown;
+}
+
+h5 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 47px;
+	text-transform: uppercase;
+}
+p{
+	color: $color--light-gray;
+	font-family: $font--secondary;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.3px;
+}
+
+
+.text{
+	&--white {
+		color: $color--white;
+	}
+	&--justify {
+		text-align: justify;
+	}
+	&--line-height {
+		line-height: 16px;
+	}
+	&--letter-spacing {
+		letter-spacing: 2px;
+	}
+}

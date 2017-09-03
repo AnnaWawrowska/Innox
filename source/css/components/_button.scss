@@ -1,0 +1,112 @@
+// -----------------Button-----------------------
+
+.btn {
+	width: 160px;
+	height: 43px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 43px;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+	padding: 0;
+	line-height: 43px;
+	background-color: $color--light-brown;
+	color: $color--white;
+	cursor: pointer;
+	outline: none;
+	&:hover {
+		background-color: darken($color--light-brown,8);
+	}
+
+
+	&--white {
+		background-color: $color--white;
+		color: $color--light-brown;
+		&:hover {
+			background-color: darken($color--white,8);
+		}
+	}
+	&--gray {
+		background-color: $color--light-gray;
+		color: $color--white;
+		&:hover {
+			background-color: darken($color--light-gray,8);
+		}
+	}
+	&--center {
+		display: block;
+		margin: 0 auto;
+	}
+	&--transparent {
+		border: 1px solid $color--white;
+		color: $color--white
+	}
+	&--small{
+		height: 35px;
+		line-height: 35px;
+	}
+	&--noneBorder{
+		border: none;
+	}
+	&--right {
+		float: right;
+	}
+	&--margin-top {
+		margin-top: 36px;
+	}
+	+ .btn{
+		margin-left: 26px;
+	}
+}
+
+.btn-lines {
+	color: $color--light-beige;
+	background-color: rgba(255, 255, 255, 0);
+	font-size: 10px;
+	font-weight: 400;
+	text-transform: uppercase;
+	width: 108px;
+	height: 25px;
+	border: 1px solid $color--light-beige;
+	position: relative;
+	display: block;
+	margin: 66px auto 0;
+	letter-spacing: 1.3px;
+	word-spacing: 4.4px;
+	cursor: pointer;
+	outline: none;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 17px;
+		height: 1px;
+		background-color: $color--white;
+		position: absolute;
+		top: 12px;
+		left: -23px;
+	}
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 17px;
+		height: 1px;
+		background-color: $color--white;
+		position: absolute;
+		top: 12px;
+		right: -23px;
+	}
+
+	&--brown {
+		color: $color--white;
+		background-color: $color--light-brown;
+		&:after, &:before {
+			background-color: $color--light-brown;
+		}
+	}
+	&--right-position {
+		left: 301px;
+    bottom: -38px;
+		margin: 0;
+	}
+}

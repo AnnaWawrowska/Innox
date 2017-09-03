@@ -1,0 +1,20 @@
+// -------------Contact---------------------------
+
+.contact {
+  width: 57%;
+  padding-bottom: 52px;
+  &__text {
+    font-size: 26px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    color: $color--lighter-brown;
+    margin-left: 2px;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 4px;
+    word-spacing: -2.2px;
+    letter-spacing: 0.3px;
+  }
+}

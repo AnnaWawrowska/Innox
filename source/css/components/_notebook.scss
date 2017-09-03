@@ -1,0 +1,21 @@
+// -------------Notebook--------------------------
+
+
+.notebook {
+	position: absolute;
+	top: 0;
+	left: -61px;
+	z-index: 2;
+	&__insert {
+		position: relative;
+		z-index: 4;
+		margin: 32px 27px 0 23px;
+		img{
+			width: 100%;
+		}
+	}
+	&__describe {
+		padding-top: 16px;
+		padding-bottom: 45px;
+	}
+}

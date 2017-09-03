@@ -1,0 +1,32 @@
+// -------------Join-us--------------------------
+
+.join-us {
+	border: 1px solid $color--light-brown;
+	height: 470px;
+	margin-bottom:  26px;
+	margin-top: 8px;
+	text-align: center;
+	padding-top: 126px;
+	
+	&__img {
+		color: $color--light-brown;
+		padding-bottom: 31px;
+	}
+	&__text {
+		color: $color--light-brown;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 36px;
+		max-width: 84px;
+		margin: 0 auto;
+		span {
+			font-size: 37px;
+			font-weight: 400;
+			letter-spacing: 0px;
+		}
+		&--font-size {
+			font-size: 28px;
+			line-height: 21px;
+		}
+	}
+}

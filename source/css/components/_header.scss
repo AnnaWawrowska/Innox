@@ -1,0 +1,32 @@
+// -------------   Header---------------------------
+.header {
+	position: absolute;
+	width: 100%;
+	top: 136px;
+	z-index: 5;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.nav {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 584px;
+	}
+
+	&__element {
+		line-height: 25px;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $color--white;
+		border-bottom: 2px solid transparent;
+		&:hover {
+			border-color: $color--light-brown;
+		}
+	}
+}

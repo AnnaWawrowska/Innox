@@ -1,0 +1,96 @@
+// -------------IMG-team--------------------------
+
+
+.img-team {
+	position: relative;
+	margin-bottom:  26px;
+	margin-top: 8px;
+
+
+	img{
+		display: block;
+	}
+
+	&:after {
+		content: '';
+		background-color: $color--brown;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.4s ease;
+	}
+
+	&:hover {
+		&:after {
+			opacity: 0.87;
+		}
+		.img-team__text {
+			opacity: 1;
+		}
+		.img-team__socials {
+			opacity: 1;
+		}
+	}
+	&__text {
+		opacity: 0;
+		position: absolute;
+		z-index: 1;
+		top: 278px;
+		left: 28px;
+		letter-spacing: 2px;
+		transition: opacity 0.4s ease;
+	}
+	&__name {
+		color: $color--white;
+		line-height: 12px;
+		font-size: 12px;
+		position: relative;
+		line-height: 24px;
+		&:after {
+			content: '';
+			width: 44px;
+			height: 2px;
+			position: absolute;
+			background-color: $color--white;
+			top: 25px;
+			left: 0
+		}
+	}
+
+	&__socials {
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		left: 29px;
+		bottom: 23px;
+		color: $color--white;
+		z-index: 3;
+		transition: opacity 0.4s ease;
+
+
+	}
+	&__ico {
+		border: 1px solid $color--white;
+		border-radius: 100%;
+		margin-right: 6px;
+		width: 24px;
+		height: 24px;
+		font-size: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		&:hover {
+			content: '';
+			background-color: $color--white;
+			color: $color--brown;
+		}
+	}
+	&--margin-bottom {
+		margin-bottom: 131px;
+	}
+}

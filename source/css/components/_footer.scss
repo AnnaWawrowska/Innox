@@ -1,0 +1,24 @@
+// -------------Footer---------------------------
+
+.footer {
+		background-color: $color--light-brown;
+		text-align: center;
+		height: 537px;
+		padding-top: 120px;
+
+  &__logo{
+
+  }
+  &__socials {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+  &__link{
+    color: $color--white;
+    font-size: 14px;
+  }
+}

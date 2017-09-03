@@ -1,0 +1,21 @@
+// ----------------Slider-----------------------
+
+.notebook-slider {
+
+}
+
+.notebook-arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 30px;
+  margin-top: 47px;
+  margin-left: 12px;
+}
+.notebook-arrow {
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 3;
+  outline: none;
+  background: transparent;
+  color: $color--white;
+}

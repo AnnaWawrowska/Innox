@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+/* ------------------------------------------ */
+/*         STYLES COMPILED WITH SASS          */
+/*      Naming conceptions of the files:      */
+/*            BEM CSS METHODOLOGY:            */
+/*            http://en.bem.info/             */
+/* ------------------------------------------ */
+/* -- Bootstrap_grid -- */
+@import "bootstrap_grid/bootstrap-grid";
+/* -- Helpers -- */
+@import 'helpers/normalize';
+@import 'helpers/include-media';
+@import 'helpers/fonts';
+@import 'helpers/colors';
+@import 'helpers/mixins';
+@import 'helpers/general';
+@import 'helpers/typography';
+
+/* -- Vendors -- */
+@import 'vendor/slick';
+@import 'vendor/lity';
+@import 'vendor/font-awesome.min.css';
+
+
+/* -- Elements -- */
+@import 'components/header';
+@import 'components/section';
+@import 'components/hero-slider';
+@import 'components/button';
+@import 'components/clients-slider';
+@import 'components/about-info';
+@import 'components/works';
+@import 'components/img-works';
+@import 'components/clients';
+@import 'components/services';
+@import 'components/notebook';
+@import 'components/notebook-slider';
+@import 'components/img-team';
+@import 'components/join-us';
+@import 'components/img-blog';
+@import 'components/map';
+@import 'components/contact';
+@import 'components/form';
+@import 'components/information';
+@import 'components/footer';
