@@ -3,12 +3,9 @@
 .footer {
 		background-color: $color--light-brown;
 		text-align: center;
-		height: 537px;
-		padding-top: 120px;
+		padding: 120px 0 100px;
+		text-align: center;
 
-  &__logo{
-
-  }
   &__socials {
     width: 350px;
     margin: 0 auto;

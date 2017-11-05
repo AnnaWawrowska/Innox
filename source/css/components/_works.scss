@@ -13,6 +13,11 @@
 		font-weight: 400;
 		text-transform: capitalize;
 		cursor: pointer;
-		background-color: $color--white;;
+		background-color: $color--white;
+		outline: none;
+		border: 1px solid transparent;
 	}
+	&__active {
+		border: 1px solid $color--lighter-brown;
+		}
 }

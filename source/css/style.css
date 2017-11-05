@@ -1757,6 +1757,10 @@ iframe, button {
   border: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 fieldset {
   border: 0;
   margin: 0;
@@ -2467,6 +2471,10 @@ p {
           align-items: center;
 }
 
+.clients-slider__client {
+  outline: none;
+}
+
 .clients-slider__client img {
   margin: 0 auto;
 }
@@ -2558,6 +2566,12 @@ p {
   text-transform: capitalize;
   cursor: pointer;
   background-color: #ffffff;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.works__active {
+  border: 1px solid #96725d;
 }
 
 .img-works {
@@ -2859,17 +2873,21 @@ p {
   line-height: 21px;
 }
 
-.img-blog {
+.blog {
+  padding-bottom: 57px;
+}
+
+.blog__img {
   position: relative;
   margin-top: 2px;
   margin-bottom: 26px;
 }
 
-.img-blog img {
+.blog__img img {
   display: block;
 }
 
-.img-blog:after {
+.blog__img:after {
   content: '';
   background-color: #433228;
   width: 100%;
@@ -2881,15 +2899,15 @@ p {
   transition: opacity 0.4s ease;
 }
 
-.img-blog:hover:after {
+.blog__img:hover:after {
   opacity: 0.87;
 }
 
-.img-blog:hover .img-blog__text {
+.blog__img:hover .blog__text {
   opacity: 1;
 }
 
-.img-blog__text {
+.blog__text {
   transition: opacity 0.4s ease;
   opacity: 0;
   position: absolute;
@@ -2898,7 +2916,7 @@ p {
   left: 75px;
 }
 
-.img-blog__signature {
+.blog__signature {
   color: #ffffff;
   font-size: 14px;
   position: relative;
@@ -2909,7 +2927,7 @@ p {
   padding-bottom: 9px;
 }
 
-.img-blog__signature:after {
+.blog__signature:after {
   content: '';
   width: 44px;
   height: 2px;
@@ -2919,7 +2937,7 @@ p {
   left: 0;
 }
 
-.img-blog__description {
+.blog__description {
   line-height: 13px;
   font-size: 10px;
   max-width: 281px;
@@ -2968,15 +2986,17 @@ p {
   color: #b7b6b6;
   padding-left: 25px;
   letter-spacing: 2.6px;
+  resize: vertical;
 }
 
-.form__input--wide {
+.form__input--width {
   width: 100%;
   max-width: 100%;
 }
 
-.form__input--high {
+.form__input--height {
   height: 254px;
+  max-height: 350px;
 }
 
 .form__input--margin-right {
@@ -3046,8 +3066,8 @@ p {
 .footer {
   background-color: #97735e;
   text-align: center;
-  height: 537px;
-  padding-top: 120px;
+  padding: 120px 0 100px;
+  text-align: center;
 }
 
 .footer__socials {

@@ -11,13 +11,15 @@
     color: $color--lighter-gray;
     padding-left: 25px;
     letter-spacing: 2.6px;
+    resize: vertical;
 
-    &--wide {
+    &--width {
       width: 100%;
       max-width: 100%;
     }
-    &--high{
+    &--height{
       height: 254px;
+      max-height: 350px;
     }
     &--margin-right {
       margin-right: 31px;
