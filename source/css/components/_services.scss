@@ -5,6 +5,9 @@
 	padding: 53px 75px 36px;
 	text-align: center;
 	margin: 3px 5px 37px 3px;
+	@include media('<md') {
+	   padding: 10px;
+	}
 
 	&__ico {
 		margin: 0 auto;
@@ -17,6 +20,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include media('<md') {
+		  transform: scale(0.8);
+		}
 
 		&:before {
 			content: '';

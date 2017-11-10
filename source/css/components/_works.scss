@@ -6,6 +6,13 @@
 		justify-content: space-between;
 		max-width: 50%;
 		margin: 0 auto 45px;
+		@include media('<lg') {
+		  max-width: 100%
+		}
+		@include media('<sm') {
+		  flex-wrap: wrap;
+			justify-content: space-around;
+		}
 	}
 	&__element {
 		color: $color--light-gray;
@@ -16,6 +23,9 @@
 		background-color: $color--white;
 		outline: none;
 		border: 1px solid transparent;
+		@include media('<sm') {
+		  margin-bottom: 10px;
+		}
 	}
 	&__active {
 		border: 1px solid $color--lighter-brown;

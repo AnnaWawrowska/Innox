@@ -4,11 +4,23 @@
 	width: 100%;
 	top: 136px;
 	z-index: 5;
+	@include media('<xl') {
+		top: 5%;
+	}
+	@include media('<md') {
+		position: fixed;
+		background-color: $color--light-gray;
+		top: 0;
+		min-height: 54px;
+	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include media('<md') {
+			padding: 10px 0;
+		}
 	}
 }
 .nav {
@@ -16,6 +28,20 @@
 		display: flex;
 		justify-content: space-between;
 		width: 584px;
+		@include media('<md') {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 54px;
+			background-color:  $color--light-gray;
+			padding: 10px 15px;
+			box-shadow: 120px 0 0 0 $color--light-gray, -120px 0 0 0 $color--light-gray;
+		}
+		&--visible {
+			display: block;
+			flex-wrap: wrap;
+			width: 100%;
+		}
 	}
 
 	&__element {
@@ -25,8 +51,27 @@
 		text-transform: uppercase;
 		color: $color--white;
 		border-bottom: 2px solid transparent;
+		@include media('<md') {
+			font-size: 18px;
+			line-height: 30px;
+			text-align: right;
+			a {
+				display: block;
+			}
+		}
 		&:hover {
 			border-color: $color--light-brown;
+		}
+	}
+	&__menu {
+		display: none;
+		@include media('<md') {
+			display: block;
+			width: 50px;
+			background-color: transparent;
+			outline: none;
+			position: relative;
+			z-index: 1;
 		}
 	}
 }

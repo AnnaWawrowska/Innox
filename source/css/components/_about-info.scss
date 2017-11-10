@@ -5,6 +5,17 @@
 	padding-bottom: 103px;
 	display: flex;
 	justify-content: space-between;
+	@include media('<xl') {
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
+	@include media('<lg') {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+	@include media('<sm') {
+	  padding: 30px 10px;
+	}
 
 
 	&__ico {
@@ -35,6 +46,8 @@
 	&__text {
 		padding-top: 13px;
 		text-align: center;
-
+	}
+	&__item {
+		transform: scale(0.9);
 	}
 }

@@ -3,6 +3,11 @@
 .contact {
   width: 57%;
   padding-bottom: 52px;
+  @include media('<lg') {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
   &__text {
     font-size: 26px;
     line-height: 22px;

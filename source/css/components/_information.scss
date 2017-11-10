@@ -4,6 +4,13 @@
 	padding-top: 2px;
 	padding-left: 48px;
 	padding-right: 55px;
+	@include media('<xl') {
+	   padding: 0 35px 0 20px;
+	}
+	@include media('<lg') {
+	  text-align: center;
+		padding-top: 40px;
+	}
 
 	&__heading {
 		font-size: 14px;
@@ -11,16 +18,43 @@
 		letter-spacing: 1.5px;
 		margin-bottom: 0px;
 	}
-	&__describe {
+	&__description {
 		margin-top: 7px;
 		line-height: 12px;
 		width: 159px;
+		@include media('<lg') {
+		  margin: 0 auto;
+			padding-top: 15px;
+		}
+		@include media('<sm') {
+		  padding-bottom: 20px;
+			font-size: 18px;
+			line-height: 24px;
+			width: 50%;
+		}
+	}
+	&__link {
+		@include media('<sm') {
+		  font-size: 18px;
+			display: inline-block;
+			line-height: 20px;
+			margin-bottom: 5px;
+		}
 	}
 	&__box {
 		padding-top: 34px;
 		margin-bottom: 20px;
 		display: flex;
 		justify-content: space-between;
+		@include media('<lg') {
+		  flex-direction: column;
+			width: 30%;
+			display: inline-block;
+		}
+		@include media('<sm') {
+		  width: 100%;
+			padding-top: 10px;
+		}
 	}
 	&__ico {
 		color: $color--light-brown;
@@ -32,10 +66,19 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
+		@include media('<lg') {
+		  margin: 0 auto;
+			margin-bottom: 20px
+		}
+		@include media('<sm') {
+		  margin-bottom: 0;
+		}
 	}
 	&--margin-top {
 		margin-top: 40px;
+		@include media('<sm') {
+		  margin-top: 0;
+		}
 	}
 	&--letter-spacing {
 		letter-spacing: 0;

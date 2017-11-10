@@ -4,6 +4,10 @@
   padding-top: 75px;
   padding-bottom: 68px;
   margin: 0 auto;
+  @include media('<xl') {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
   .slick-track {
     display: flex;
     align-items: center;
@@ -22,6 +26,9 @@
   justify-content: space-between;
   margin: 0 auto;
   width: 60px;
+  @include media('<md') {
+    width: 150px;
+  }
 }
 
 .arrow {

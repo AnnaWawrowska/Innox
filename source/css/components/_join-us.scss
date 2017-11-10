@@ -2,15 +2,24 @@
 
 .join-us {
 	border: 1px solid $color--light-brown;
-	height: 470px;
 	margin-bottom:  26px;
-	margin-top: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	padding-top: 126px;
-	
+	height: calc(100% - 26px);
+	@include media('<sm') {
+		margin-top: 0;
+	}
+
 	&__img {
 		color: $color--light-brown;
 		padding-bottom: 31px;
+		@include media('<lg') {
+			transform: scale(0.7);
+			padding-bottom: 20px;
+		}
 	}
 	&__text {
 		color: $color--light-brown;
@@ -19,14 +28,25 @@
 		line-height: 36px;
 		max-width: 84px;
 		margin: 0 auto;
+		@include media('<lg') {
+			font-size: 25px;
+			line-height: 28px;
+		}
 		span {
 			font-size: 37px;
 			font-weight: 400;
 			letter-spacing: 0px;
+			@include media('<lg') {
+				font-size: 30px;
+			}
 		}
 		&--font-size {
 			font-size: 28px;
 			line-height: 21px;
+			@include media('<lg') {
+				font-size: 25px;
+				line-height: 26px;
+			}
 		}
 	}
 }

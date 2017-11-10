@@ -1,6 +1,12 @@
 // -------------Form---------------------------
 
 .form {
+  @include media('<lg') {
+    padding-bottom: 10px;
+  }
+  @include media('<sm') {
+    padding: 10px 5px;
+  }
   &__input {
     width: 47.5%;
     height: 50px;
@@ -12,6 +18,15 @@
     padding-left: 25px;
     letter-spacing: 2.6px;
     resize: vertical;
+    @include media('<lg') {
+      padding-left: 3%;
+    }
+    @include media('<sm') {
+      width: 100%;
+      line-height: 30px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
 
     &--width {
       width: 100%;
@@ -22,7 +37,7 @@
       max-height: 350px;
     }
     &--margin-right {
-      margin-right: 31px;
+      margin-right: 4%;
     }
   }
 }

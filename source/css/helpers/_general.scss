@@ -47,4 +47,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-$breakpoints: (phone: 565px, tablet: 860px, desktop: 1440px);
+// .container {
+// 	position: static;
+// }
+$breakpoints: (sm: 576px, md: 768px, lg: 992px, xl: 1200px);

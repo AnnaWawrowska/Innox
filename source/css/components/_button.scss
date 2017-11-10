@@ -14,9 +14,13 @@
 	color: $color--white;
 	cursor: pointer;
 	outline: none;
+	@include media('<sm') {
+	  margin-bottom: 20px;
+	}
 	&:hover {
 		background-color: darken($color--light-brown,8);
 	}
+
 
 
 	&--white {
@@ -50,12 +54,18 @@
 	}
 	&--right {
 		float: right;
+		@include media('<sm') {
+		  float: none;
+		}
 	}
 	&--margin-top {
 		margin-top: 36px;
 	}
 	+ .btn{
 		margin-left: 26px;
+		@include media('<sm') {
+		  margin-left: 0;
+		}
 	}
 }
 
@@ -75,6 +85,10 @@
 	word-spacing: 4.4px;
 	cursor: pointer;
 	outline: none;
+	@include media('<lg') {
+		margin-top: 30px;
+		transform: scale(0.8);
+	}
 
 	&:before {
 		content: '';
@@ -106,7 +120,22 @@
 	}
 	&--right-position {
 		left: 301px;
-    bottom: -38px;
+		bottom: -38px;
 		margin: 0;
+		@include media('<xl') {
+			left: 80%;
+		}
+		@include media('<lg') {
+			left: 60%;
+			bottom: -20px;
+		}
+		@include media('<md') {
+			bottom: -80px;
+			left: 100%;
+		}
+		@include media('<sm') {
+			bottom: 0;
+			left: 50%;
+		}
 	}
 }

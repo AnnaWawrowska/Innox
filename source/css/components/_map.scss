@@ -3,6 +3,9 @@
 .map  {
 	padding-top: 4px;
 	padding-bottom: 104px;
+	@include media('<sm') {
+	  padding-bottom: 30px;
+	}
 	&__container{
 		height: 387px;
 		width: 100%;

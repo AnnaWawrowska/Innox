@@ -8,7 +8,13 @@
 		text-align: center;
 		margin:  100px auto 172px;
 		box-shadow: 0 0 0px 20px $color--white;
-
+		@include media('<xl') {
+			margin: 80px auto 80px;
+		}
+		@include media('<sm') {
+			margin: 40px 0;
+			width:inherit;
+		}
 
 		&:before {
 			content: "";
@@ -19,9 +25,18 @@
 			left: 15px;
 			top: 21px;
 			z-index: -1;
+			@include media('<sm') {
+			  display: none;
+			}
 		}
 		&--margin-bottom {
 			margin-bottom: 115px;
+			@include media('<xl') {
+				margin-bottom: 80px;
+			}
+			@include media('<sm') {
+			 margin-bottom: 40px;
+			}
 		}
 
 	}
@@ -32,35 +47,79 @@
 		width: 100%;
 		background-image: url(../img/bg-hero.png);
 		background-repeat: no-repeat;
+		@include media('<xl') {
+			height: 100vh;
+			background-size: cover;
+		}
+		@include media('<lg') {
+		  background-position: center; 
+		}
 	}
 
 	&--about {
 		padding-top: 76px;
+		@include media('<xl') {
+			padding-top: 0;
+		}
+		@include media('<lg') {
+			text-align: center;
+		}
 	}
 	&--works {
 		padding-top: 72px;
+		@include media('<xl') {
+			padding-top: 0;
+		}
 	}
 	&--clients {
 		padding-top: 76px;
 		text-align: center;
+		@include media('<xl') {
+			padding-top: 0;
+		}
 	}
 	&--services {
 		padding-top: 6px;
 		padding-bottom: 63px;
+		@include media('<xl') {
+			padding-top: o;
+		}
 	}
 	&--notebook {
 		background-color: $color--light-brown;
 		padding-top: 160px;
-		padding-bottom: 37px;
 		text-align: left;
+		@include media('<xl') {
+			padding-top: 100px
+		}
+		@include media('<lg') {
+			padding-top: 40px;
+		}
 	}
 	&--team {
 		padding-top: 62px;
+		@include media('<xl') {
+			padding-top: 0;
+		}
 	}
-
-
+	&--blog {
+		padding-top: 131px;
+		@include media('<xl') {
+			padding-top: 0;
+		}
+	}
 	&--contact {
 		padding-top: 75px;
 		padding-bottom: 139px;
+		@include media('<xl') {
+			padding-top: 0;
+			padding-bottom: 80px;
+		}
+		@include media('<lg') {
+			text-align: center;
+		}
+		@include media('<sm') {
+			padding-bottom: 20px;
+		}
 	}
 }

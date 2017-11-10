@@ -1,15 +1,26 @@
 // ----------------Slider-----------------------
-
 .notebook-slider {
-
+  @include media('<lg') {
+    text-align: center;
+  }
 }
-
 .notebook-arrows {
   display: flex;
   justify-content: space-between;
   width: 30px;
   margin-top: 47px;
   margin-left: 12px;
+  @include media('<xl') {
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+  @include media('<lg') {
+    margin: 20px auto;
+    width: 100px;
+  }
+  @include media('<sm') {
+    width: 150px;
+  }
 }
 .notebook-arrow {
   font-size: 16px;

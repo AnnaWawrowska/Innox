@@ -4,6 +4,12 @@
 	text-align: center;
 	padding-top: 434px;
 	position: relative;
+	@include media('<xl') {
+		padding-top: 45vh;
+	}
+	@include media('<sm') {
+	  padding-top: 30vh;
+	}
 
 	&__item {
 		outline:none;
@@ -15,9 +21,16 @@
 		font-weight: 300;
 		color: $color--white;
 		margin-bottom: 80px;
+		@include media('<sm') {
+		  font-size: 30px;
+			padding: 0 30px;
+		}
 		&--bold {
 			font-size: 38px;
 			font-weight: 700;
+			@include media('<sm') {
+			  font-size: 25px;
+			}
 		}
 	}
 }
@@ -34,10 +47,26 @@
 		bottom: 155px;
 		left: 6px;
 		color: $color--white;
+		@include media('<xl') {
+			bottom: 25%;
+			left: 5%;
+		}
+		@include media('<sm') {
+			bottom: 18%;
+		  left: 35%;
+		}
 	}
 	&__next {
 		right: 7px;
 		bottom: 154px;
 		color: $color--white;
+		@include media('<xl') {
+			bottom: 25%;
+			right: 5%;
+		}
+		@include media('<sm') {
+			bottom: 18%;
+		  right: 35%;
+		}
 	}
 }
