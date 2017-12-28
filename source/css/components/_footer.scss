@@ -26,5 +26,8 @@
   &__link{
     color: $color--white;
     font-size: 14px;
+		@include media('<sm') {
+		   font-size: 18px;
+		}
   }
 }

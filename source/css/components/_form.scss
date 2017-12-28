@@ -18,6 +18,9 @@
     padding-left: 25px;
     letter-spacing: 2.6px;
     resize: vertical;
+    appearance: none;
+    border-radius: 0;
+    border: 1px solid $color--lighter-gray;
     @include media('<lg') {
       padding-left: 3%;
     }
@@ -28,11 +31,11 @@
       margin-bottom: 20px;
     }
 
-    &--width {
+    &--wide {
       width: 100%;
       max-width: 100%;
     }
-    &--height{
+    &--high{
       height: 254px;
       max-height: 350px;
     }

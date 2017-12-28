@@ -1,2 +1,4 @@
 node_modules
 *.psd
+source/flat
+public_html
